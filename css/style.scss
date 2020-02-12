@@ -2,17 +2,53 @@
 body {
     font-family: 'PT Sans Narrow', sans-serif;
 }
+
 li {
     list-style-type: none;
 }
+
 a {
     text-decoration: none;
 }
+
 // Меню
-.nav { 
+.header {
     display: flex;
+    flex-direction: column;
+    height: 100%;
     justify-content: space-between;
 }
+
+.nav {
+    margin: 0 auto;
+    min-width: 900px;
+    display: flex;
+    
+
+    .menu {
+        width: 510px;
+        // display: flex;
+        // justify-content: space-between;
+
+        .menu-item {
+            
+            // display: inline-block;
+            // margin-right: 40px;
+        }
+    }
+
+    .menu-nav {
+        display: flex;
+        justify-content: space-between;
+        }
+
+    }
+
+    .menu-user {
+        display: flex;
+        width: 65px;
+    }
+
 
 // Преимущества
 // Новости
