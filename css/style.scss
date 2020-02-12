@@ -1,6 +1,11 @@
+$color-black: #000000;
+
 // Глобальные стили
 body {
     font-family: 'PT Sans Narrow', sans-serif;
+    background: url('../img/Layer.jpg');
+    background-repeat: no-repeat;
+
 }
 
 li {
@@ -13,47 +18,51 @@ a {
 
 // Меню
 .header {
-    display: flex;
     flex-direction: column;
     height: 100%;
-    justify-content: space-between;
+}
+
+.wrapper {
+    width: 100%;
+    background-color: $color-black;
 }
 
 .nav {
-    margin: 0 auto;
-    min-width: 900px;
     display: flex;
-    
+    margin: 0 auto;
+    max-width: 900px;
+    justify-content: space-between;
 
     .menu {
         width: 510px;
-        // display: flex;
-        // justify-content: space-between;
 
-        .menu-item {
-            
-            // display: inline-block;
-            // margin-right: 40px;
+        .menu-nav {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
         }
-    }
-
-    .menu-nav {
-        display: flex;
-        justify-content: space-between;
-        }
-
     }
 
     .menu-user {
-        display: flex;
         width: 65px;
+        ul {
+            margin: 0;
+        }
     }
 
-
-// Преимущества
-// Новости
-// Фотогаллерея
-// Контактная информация
-// Записаться
-// Футер
-// Модальное окно
+    .menu-title {
+        display: block;
+        color: white;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+.wrapper-logo {
+    display: flex;
+    width: 100%;
+}
+.logo {
+justify-content: center;
+    margin: 60px auto 80px;
+}
