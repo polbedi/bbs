@@ -1,8 +1,10 @@
 $color-black: #000000;
+$color-white: #ffffff;
 
 // Глобальные стили
 body {
     font-family: 'PT Sans Narrow', sans-serif;
+    background-color: $color-black;
     background: url('../img/Layer.jpg');
     background-repeat: no-repeat;
 
@@ -46,6 +48,7 @@ a {
 
     .menu-user {
         width: 65px;
+
         ul {
             margin: 0;
         }
@@ -53,16 +56,197 @@ a {
 
     .menu-title {
         display: block;
-        color: white;
+        color: $color-white;
         padding-top: 30px;
         padding-bottom: 30px;
     }
 }
+
 .wrapper-logo {
     display: flex;
     width: 100%;
 }
+
 .logo {
-justify-content: center;
+    justify-content: center;
     margin: 60px auto 80px;
 }
+
+// Конец блока "Меню"
+
+// Преимущества
+.benefits {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .benefits-item {
+        margin-right: 20px;
+        margin-bottom: 90px;
+        width: 300px;
+
+        h2 {
+            text-align: center;
+            color: $color-white;
+        }
+
+        p {
+            text-align: center;
+            color: $color-white;
+        }
+    }
+}
+
+// Конец блока "Преимущества"
+
+.wrapper-ngcf {
+    width: 940px;
+    margin: 0 auto;
+    display: flex;
+
+    background-color: #f7f4f1;
+    background-image: url(../img/Layer-10-copy.jpg);
+}
+
+// Новости
+.news {
+    width: 50%;
+    margin-top: 60px;
+
+    .news-wrapper {
+        width: 360px;
+        margin: 0 auto;
+    }
+
+    .news-title {
+        margin: 0;
+        color: $color-black;
+    }
+
+    .news-item {
+        p {
+            margin-top: 35px;
+            color: $color-black;
+        }
+
+        time {
+            margin-top: 15px;
+            color: $color-black;
+        }
+    }
+
+    .btn {
+        display: block;
+        width: 140px;
+        margin-bottom: 50px;
+        margin-top: 35px;
+        padding: 15px 0px;
+        text-align: center;
+
+        color: $color-white;
+        background-color: $color-black;
+
+    }
+}
+
+// Конец блока "Новости"
+
+// Фотогаллерея
+.gallery {
+    width: 50%;
+    // margin-left: 70px;
+    margin-top: 60px;
+
+    .gallery-wrapper {
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    h2 {
+        margin: 0;
+        color: $color-black;
+    }
+
+    img {
+        display: block;
+        margin: 40px auto 17px;
+        padding: 0;
+    }
+
+    .gallery-btn {
+        display: flex;
+        justify-content: space-between;
+
+        .btn {
+            display: block;
+            width: 140px;
+            margin-bottom: 50px;
+            margin-top: 45px;
+            padding: 15px 0px;
+            text-align: center;
+
+            color: $color-white;
+            background-color: $color-black;
+
+        }
+    }
+}
+
+// Конец блока "Фотогаллерея"
+
+.wrapper-cf {
+    width: 940px;
+    margin: 40px auto 65px;
+    display: flex;
+
+    background-color: #f7f4f1;
+    background-image: url(../img/Layer-10-copy.jpg);
+}
+
+// Контактная информация
+.contact {
+    width: 50%;
+
+    .contact-wrapper {
+        width: 325px;
+        margin: 0 auto;
+    }
+}
+
+.form {
+    width: 50%;
+
+    .form-wrapper {
+        width: 300px;
+        margin: 0 auto;
+
+        .form-item1 {
+            display: flex;
+
+            input {
+                margin: 15px 0;
+                width: 140px;
+                // margin-top: 15px;
+                // margin-bottom: 15px;
+            }
+
+            .form-data,
+            .form-name {
+                margin-right: 20px;
+            }
+        }
+    }
+
+    button {
+        width: 100%;
+        margin-bottom: 50px;
+        margin-top: 45px;
+        padding: 15px 0px;
+        text-align: center;
+
+        color: $color-white;
+        background-color: $color-black;
+    }
+}
+
+// Конец блока "Контактная информация"
