@@ -213,6 +213,38 @@ a {
   margin: 0 auto;
 }
 
+.contact .contact-wrapper .contact-title {
+  margin-top: 55px;
+  margin-bottom: 35px;
+}
+
+.contact .contact-wrapper .contact-adress {
+  margin: 0;
+}
+
+.contact .contact-wrapper .contact-time {
+  margin-top: 35px;
+  margin-bottom: 30px;
+}
+
+.contact .contact-wrapper .contact-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact .contact-wrapper .btn {
+  width: 140px;
+  margin: 0;
+  padding: 15px 0px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #000000;
+}
+
 .form {
   width: 50%;
 }
@@ -222,19 +254,24 @@ a {
   margin: 0 auto;
 }
 
-.form .form-wrapper .form-item1 {
+.form .form-wrapper .form-title {
+  margin-top: 55px;
+  margin-bottom: 35px;
+}
+
+.form .form-wrapper .form-title .form-item1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.form .form-wrapper .form-item1 input {
+.form .form-wrapper .form-title .form-item1 input {
   margin: 15px 0;
   width: 140px;
 }
 
-.form .form-wrapper .form-item1 .form-data,
-.form .form-wrapper .form-item1 .form-name {
+.form .form-wrapper .form-title .form-item1 .form-data,
+.form .form-wrapper .form-title .form-item1 .form-name {
   margin-right: 20px;
 }
 
@@ -246,5 +283,6 @@ a {
   text-align: center;
   color: #ffffff;
   background-color: #000000;
+  border: 0;
 }
 /*# sourceMappingURL=style.css.map */

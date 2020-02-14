@@ -210,6 +210,32 @@ a {
     .contact-wrapper {
         width: 325px;
         margin: 0 auto;
+
+        .contact-title {
+            margin-top: 55px;
+            margin-bottom: 35px;
+        }
+        .contact-adress {
+            margin: 0;
+        }
+        .contact-time {
+            margin-top: 35px;
+            margin-bottom: 30px;
+        }
+        .contact-btn {
+            display: flex;
+            justify-content: space-between;
+        }
+        .btn {
+            
+            width: 140px;
+            margin: 0;
+            padding: 15px 0px;
+            text-align: center;
+
+            color: $color-white;
+            background-color: $color-black;
+        }
     }
 }
 
@@ -220,21 +246,23 @@ a {
         width: 300px;
         margin: 0 auto;
 
-        .form-item1 {
-            display: flex;
-
-            input {
-                margin: 15px 0;
-                width: 140px;
-                // margin-top: 15px;
-                // margin-bottom: 15px;
+        .form-title {
+            margin-top: 55px;
+            margin-bottom: 35px;
+            
+            .form-item1 {
+                display: flex;
+                
+                input {
+                    margin: 15px 0;
+                    width: 140px;
+                }
+                .form-data,
+                .form-name {
+                    margin-right: 20px;
+                }
             }
-
-            .form-data,
-            .form-name {
-                margin-right: 20px;
-            }
-        }
+        } 
     }
 
     button {
@@ -246,6 +274,7 @@ a {
 
         color: $color-white;
         background-color: $color-black;
+        border: 0;
     }
 }
 
