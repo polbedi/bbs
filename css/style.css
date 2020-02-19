@@ -259,19 +259,26 @@ a {
   margin-bottom: 35px;
 }
 
-.form .form-wrapper .form-title .form-item1 {
+.form .form-item1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.form .form-wrapper .form-title .form-item1 input {
+.form .form-item1 .form-form {
+  width: 140px;
+}
+
+.form .form-item1 input {
   margin: 15px 0;
   width: 140px;
 }
 
-.form .form-wrapper .form-title .form-item1 .form-data,
-.form .form-wrapper .form-title .form-item1 .form-name {
+.form .form-item1 .form-data,
+.form .form-item1 .form-name {
   margin-right: 20px;
 }
 

@@ -238,7 +238,9 @@ a {
         }
     }
 }
+// // Конец блока "Контактная информация""Контактная информация"
 
+// FIXME:Записаться
 .form {
     width: 50%;
 
@@ -250,19 +252,26 @@ a {
             margin-top: 55px;
             margin-bottom: 35px;
             
-            .form-item1 {
-                display: flex;
-                
-                input {
-                    margin: 15px 0;
-                    width: 140px;
-                }
-                .form-data,
-                .form-name {
-                    margin-right: 20px;
-                }
-            }
+            
         } 
+    }
+    .form-item1 {
+        display: flex;
+        justify-content: space-between;
+
+        .form-form {
+         width: 140px;   
+            
+        }
+        
+        input {
+            margin: 15px 0;
+            width: 140px;
+        }
+        .form-data,
+        .form-name {
+            margin-right: 20px;
+        }
     }
 
     button {
@@ -277,5 +286,4 @@ a {
         border: 0;
     }
 }
-
-// Конец блока "Контактная информация"
+// Конец блока "Записаться"
