@@ -323,9 +323,15 @@ a {
 .footer .wrapper-footer .social .social-wrapper {
   width: 140px;
   margin: 0 auto;
+  padding: 0;
 }
 
-.footer .wrapper-footer .social .social-wrapper .social-wrapper-item {
+.footer .wrapper-footer .social .social-wrapper ul {
+  padding: 0;
+  text-align: center;
+}
+
+.footer .wrapper-footer .social .social-wrapper ul .social-wrapper-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -334,10 +340,20 @@ a {
           justify-content: space-between;
 }
 
-.footer .wrapper-footer .social .social-wrapper .social-wrapper-item .social-item {
-  width: 45px;
-  height: 45px;
+.footer .wrapper-footer .social .social-wrapper ul .social-wrapper-item .social-item {
+  margin-left: 10px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
   background-color: #000000;
+}
+
+.footer .wrapper-footer .social .social-wrapper ul .social-wrapper-item .social-item:first-child {
+  margin-left: 0px;
+}
+
+.footer .wrapper-footer .social .social-wrapper ul .social-wrapper-item .social-item img {
+  vertical-align: middle;
 }
 
 .footer .wrapper-footer .autor {
@@ -354,6 +370,8 @@ a {
 }
 
 .footer .wrapper-footer .autor .autor-wrapper .btn {
+  display: block;
+  width: 140px;
   margin: 0;
   padding: 15px 0px;
   text-align: center;

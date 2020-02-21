@@ -296,6 +296,8 @@ a {
 
 // Конец блока "Записаться"
 
+// Футер
+
 .footer {
 
     width: 100%;
@@ -317,30 +319,51 @@ a {
 
         .social {
             width: 33%;
-            
+
             text-align: center;
 
-           
+
 
             .social-wrapper {
                 width: 140px;
                 margin: 0 auto;
+                padding: 0;
 
-                .social-wrapper-item {
-                    display: flex;
-                    justify-content: space-between;                    
-                .social-item {
-                    width: 45px;
-                    height: 45px;
-                    background-color: $color-black;
+                ul {
+                    padding: 0;
+                    text-align: center;
+
+                    .social-wrapper-item {
+                        display: flex;
+                        justify-content: space-between;
+                        
+                        
+    
+                        .social-item {
+                            margin-left: 10px;
+                            width: 40px;
+                            height: 40px;
+                            line-height: 40px;
+                            background-color: $color-black;
+
+                            &:first-child {
+                                margin-left: 0px;
+                            }
+
+                            img {
+                                vertical-align: middle;
+                            }
+                        }
+                    }
                 }
-                }
+
+                
             }
         }
+
         .autor {
             width: 33%;
-            // text-align: right;
-
+            
             .autor-wrapper {
                 width: 140px;
                 float: right;
@@ -348,16 +371,21 @@ a {
                 h3 {
                     text-align: center;
                 }
+
                 .btn {
+                    display: block;
+                    width: 140px;
                     margin: 0;
                     padding: 15px 0px;
                     text-align: center;
-        
+
                     color: $color-white;
-                    background-color: $color-black;  
+                    background-color: $color-black;
                 }
             }
-            
+
         }
     }
 }
+
+// Конец блока "Футер"
